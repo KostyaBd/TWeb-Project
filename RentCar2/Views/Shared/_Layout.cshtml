@@ -1,0 +1,33 @@
+﻿@using System.Web.Script.Serialization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/bundles/bootstrap")
+    @Styles.Render("~/bundles/style")
+    @Styles.Render("~/bundles/jquery.fancybox")
+    @Styles.Render("~/bundles/bootstrap-datepicker")
+    @Styles.Render("~/bundles/owl.carousel")
+    @Styles.Render("~/bundles/owl.theme.default.min")
+    @Styles.Render("~/bundles/flaticon")
+</head>
+<body>
+        @Html.Partial("_Head")
+        @RenderBody()
+        @Html.Partial("_Main")
+        @Html.Partial("_Footer")
+
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/popper.min")
+    @Scripts.Render("~/bundles/owl.carousel.min")
+    @Scripts.Render("~/bundles/jquery.sticky")
+    @Scripts.Render("~/bundles/jquery.waypoints.min")
+    @Scripts.Render("~/bundles/jquery.animateNumber.min")
+    @Scripts.Render("~/bundles/jquery.fancybox.min")
+    @Scripts.Render("~/bundles/jquery.easing.1.3")
+    @Scripts.Render("~/bundles/bootstrap-datepicker.min")
+    @Scripts.Render("~/bundles/aos.js")
+</body>
+</html>
